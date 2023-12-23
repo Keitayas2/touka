@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'touka/index' => 'touka#index'
   root 'touka#index'
   
-  
+  get 'touka/about' => 'touka#about'
 end
