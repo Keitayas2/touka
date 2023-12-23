@@ -1,0 +1,2 @@
+class ToukaController < ApplicationController
+end
