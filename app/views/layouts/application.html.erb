@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Toukanomori</title>
+    <title>福岡大学ポケモンサークル</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= favicon_link_tag('favicon.ico') %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,22 @@
   </head>
 
   <body>
+    <h2>福岡大学 ポケモンサークル トウカのもり</h2>
+    <ul>
+      <li class='normal'>
+        <%= link_to 'ホーム' , root_path%>
+      </li>
+      <li class='normal'>
+        <%= link_to 'サークル紹介' , touka_about_path %>
+      </li>
+    </ul>
+
+    <ul>
+      <li class='normal'>
+        <a href="https://www.pokemon.co.jp/" target='_blank' rel='noreferrer noopener'>ポケットモンスターオフィシャルサイト</a>
+    </ul>
+
+
     <%= yield %>
   </body>
 </html>
