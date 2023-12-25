@@ -12,9 +12,11 @@
   </head>
 
   <body>
-    <header><h2>福岡大学 ポケモンサークル トウカのもり</h2><header>
+    <header><h2>福岡大学 ポケモンサークル トウカのもり</h2></header>
 
-<!-- トウカのもり関係はここ -->
+<div class="main">
+  <div class="side-left">
+    <!-- トウカのもり関係はここ -->
     <ul>
       <li class='normal'>
         <span style="font-size: medium;">
@@ -24,7 +26,6 @@
           <%= link_to 'ホーム' , root_path%>
         </span>
       </li>
-        
 
       <li class='normal'>
         <span style="font-size: medium;">
@@ -34,7 +35,27 @@
           <%= link_to 'サークル紹介' , touka_about_path %>
         </span>
       </li>
+    </ul>
 
+    <!-- リンク関係はここ -->
+    <ul>
+      <li class='normal'>
+        <span style="font-size: medium;">
+          <span class="cicle">●</span>
+        </span>
+        <span>
+          <a href="https://twitter.com/fukudai_pokemon" target='_blank' rel='noreferrer noopener'>トウカのもり公式X</a>
+        </span>
+      </li>
+
+      <li class='normal'>
+        <span style="font-size: medium;">
+          <span class="cicle">●</span>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/toukanomori2016/" target='_blank' rel='noreferrer noopener'>トウカのもり公式Instagram</a>
+        </span>
+      </li>
 
       <li class='normal'>
         <span style="font-size: medium;">
@@ -44,10 +65,7 @@
           <a href="https://toukanomori.hatenablog.com/about" target='_blank' rel='noreferrer noopener'>トウカのもり公式ブログ</a>
         </span>
       </li>
-    </ul>
 
-<!-- リンク関係はここ -->
-    <ul>
       <li class='normal'>
         <span style="font-size: medium;">
           <span class="cicle">●</span>
@@ -57,22 +75,26 @@
         </span>
       </li>
     </ul>
+  </div>
 
-
+  <div class="side-right">
     <%= yield %>
+  </div>
+</div>
+
 
 
     <br>
     <span style="color: #333333; font-size: x-small;"> 
       当サイトはリンクフリーとなっています。<br>
-      ※当サイトに関係のないサイトリンクはお断りすることがあります。<br>
+      当サイトに関係のないサイトリンクはお断りすることがあります。<br>
       ポケットモンスター・ポケモン・Pokemonは任天堂・クリーチャーズ・ゲームフリークの登録商標です。<br>
       このサイトは個人（福岡大学ポケモンサークル トウカのもり）によるものであり、任天堂・ゲームフリーク・株式会社ポケモンとは無関係です。<br>
       また、当サイトで使用されている写真や絵の転載等はご遠慮いただきますようお願いいたします。 
     </span>
 
     <div id="copyright"><!--こちらはご自身のサイト名に変更してください↓ --> 
-      Copyright © 2016 Pokemon Club Fukuoka University all rights reserved.
+      Copyright (C) 2016 Pokemon Club Fukuoka University all rights reserved.
     </div>
 
   </body>
