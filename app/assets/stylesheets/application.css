@@ -24,3 +24,19 @@
     background-size: cover;
   }
 
+  .side-left{
+    width: 30%
+}
+
+.side-right{
+    width: 70%
+}
+
+.main{
+    display: flex;
+}
+
+a{
+    color: black;
+}
+

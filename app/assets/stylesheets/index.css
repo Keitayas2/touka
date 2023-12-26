@@ -6,17 +6,6 @@ ul{
 
 .cicle{
     font-size: 0.3em; 
-}
-
-.side-left{
-    width: 30%
-}
-
-.side-right{
-    width: 70%
-}
-
-.main{
-    display: flex;
+    color: #777;
 }
 
