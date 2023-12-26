@@ -17,73 +17,73 @@
       <h2><%= link_to '福岡大学ポケモンサークル トウカのもり' , root_path%></h2>
     </div>
 
-  <div class="main">
-    <div class="side-left">
-    <!-- トウカのもり関係はここ -->
-      <ul>
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <%= link_to 'ホーム' , root_path%>
-          </span>
-        </li>
+    <div class="main">
+      <div class="side-left">
+      <!-- トウカのもり関係はここ -->
+        <ul>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <%= link_to 'ホーム' , root_path%>
+            </span>
+          </li>
 
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <%= link_to 'サークル紹介' , touka_about_path %>
-          </span>
-        </li>
-      </ul>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <%= link_to 'サークル紹介' , touka_about_path %>
+            </span>
+          </li>
+        </ul>
 
-      <!-- リンク関係はここ -->
-      <ul>
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <a href="https://twitter.com/fukudai_pokemon" target='_blank' rel='noreferrer noopener'>トウカのもり公式X</a>
-          </span>
-        </li>
+        <!-- リンク関係はここ -->
+        <ul>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <a href="https://twitter.com/fukudai_pokemon" target='_blank' rel='noreferrer noopener'>トウカのもり公式X</a>
+            </span>
+          </li>
 
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <a href="https://www.instagram.com/toukanomori2016/" target='_blank' rel='noreferrer noopener'>トウカのもり公式Instagram</a>
-          </span>
-        </li>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <a href="https://www.instagram.com/toukanomori2016/" target='_blank' rel='noreferrer noopener'>トウカのもり公式Instagram</a>
+            </span>
+          </li>
 
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <a href="https://toukanomori.hatenablog.com/about" target='_blank' rel='noreferrer noopener'>トウカのもり公式ブログ</a>
-          </span>
-        </li>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <a href="https://toukanomori.hatenablog.com/about" target='_blank' rel='noreferrer noopener'>トウカのもり公式ブログ</a>
+            </span>
+          </li>
 
-        <li class='normal'>
-          <span style="font-size: medium;">
-            <span class="cicle">●</span>
-          </span>
-          <span>
-            <a href="https://www.pokemon.co.jp/" target='_blank' rel='noreferrer noopener'>ポケットモンスターオフィシャルサイト</a>
-          </span>
-        </li>
-      </ul>
+          <li class='normal'>
+            <span style="font-size: medium;">
+              <span class="cicle">●</span>
+            </span>
+            <span>
+              <a href="https://www.pokemon.co.jp/" target='_blank' rel='noreferrer noopener'>ポケットモンスターオフィシャルサイト</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-right">
+        <%= yield %>
+      </div>
     </div>
-
-    <div class="side-right">
-      <%= yield %>
-    </div>
-  </div>
 
   <br>
 
@@ -97,7 +97,7 @@
       </span>
 
       <div id="copyright"><!--こちらはご自身のサイト名に変更してください↓ --> 
-        Copyright (C) 2016 Pokemon club of Fukuoka University all rights reserved.
+        Copyright (C) 2016 Pokemon club Fukuoka University all rights reserved.
       </div>
     </footer>
   </body>

@@ -1,0 +1,10 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail{
+    font-size: x-small;
+}
+
