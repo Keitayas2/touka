@@ -1,7 +1,15 @@
-<%= stylesheet_link_tag "about", :media => "all" %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'about', media: 'all' %>
+  <title>サークル紹介</title>
+</head>
+<body>
 
 <div class="main-container">
-    
+
     <div class="page-title">
         <h2><strong>サークル紹介</strong></h2>
     </div>
@@ -10,23 +18,53 @@
         <br>
         <h3 class="h3">このサークルについて</h3>
         <p>
-            このサークルは、 <br>
-            2016年4月に<span style="color: #ff0000;">ポケモンについて語り合いたい</span>という目的で <br>
-            創設されました。 <br>
-            当サークルは、ポケモン対戦をしたい方はもちろん、ポケモンカードゲームをしたい方、 <br>
-            ポケモン対戦やポケモンカードに興味はないけれど、ポケモン談義がしたい方も大歓迎です！ <br>
+            このサークルは、2016年4月に<span style="color: #ff0000;">ポケモンについて語り合いたい</span>という目的で
+            創設されました。当サークルは、ポケモン対戦をしたい方はもちろん、ポケモンカードゲームをしたい方、
+            ポケモン対戦やポケモンカードに興味はないけれど、ポケモン談義がしたい方も大歓迎です！
             是非一度、部会にお越しください！<br>
             <br>
-            <br>
-            また、当サークルは非公認サークルですが、<strong><span style="color: #ff0000;">2025年公認化予定</span></strong>です！
+            また、当サークルは現在、非公認サークルですが、<span style="color: #ff0000;">2025年公認化予定</span>です！
         </p>
-        <h3 class="h3">部会について</h3>
+        <h3 class="h3">活動内容について</h3>
         <p>
-            ポケモン好きが集まって、ポケモンゲームの対戦をしたり、ポケモンカードで遊んだりしています！ <br>
+            ポケモン好きが集まって、ポケモンゲームの対戦をしたり、ポケモンカードで遊んだりしています！
+            また、ポケモン以外にもスマブラやスプラトゥーン、通常の活動以外ではPayPayドームで野球観戦や
+            バーベキューといった、その他のイベントも開催しています！<br>
             <strong>
-                <span style="color: #3b82c4;">会費は部会1回参加あたり、100円です！</span>
-                <span class="detail">（ただし、2025年に公認化した場合無料化予定）</span><br>
+                <span style="color: #ff0000;">会費は部会1回参加あたり、100円です！</span>
+                <span class="detail">（ただし、2025年に公認化した場合、無料化予定）</span><br>
             </strong>
             また、他サークルと掛け持ちでの参加も大歓迎です！（実際に掛け持ちしている方もいます！）
+        </p>
+
+        <!-- 表示対象の月 -->
+        <script>
+            // 表示させたい月を指定します（1月から12月までの数字）
+            const targetMonthStart = 10; // 8は例として8月を示しています
+            const targetMonthEnd = 12;
+
+            // 現在の月を取得
+            const currentDate = new Date();
+            const currentMonth = currentDate.getMonth() + 1; // 月は0から11で表されるため+1して調整
+
+            // 表示対象の月と現在の月が一致する場合のみコンテンツを表示
+            if (currentMonth >= targetMonthStart && currentMonth <= targetMonthEnd) {
+                // 文字列を組み立ててdocument.writeで追加
+                let contentHTML = '<h3 class="h3">新歓について</h3>';
+
+                // ここに表示したいコンテンツを追加
+                contentHTML += '<p>トウカのもりでは、4月に新入生歓迎会を行います！<br>';
+                contentHTML += '内容は以下の通りです！<br>';
+                contentHTML += '<div class="event-details">';
+                contentHTML += '4月12日(金) ポケモンSV ゆびをふる大会 <br> 4月19日(金) ポケモンSV 使用ポケモン指名大会<br><div class="detail">※ポケモンカードは両日程通常の大会を行います。</div>'
+                contentHTML += '</div></p>'
+                contentHTML += '<p>詳しい内容は、こちらをご覧ください <strong><a href="https://toukanomori.hatenablog.com/about" target="_blank" rel="noreferrer noopener" class="new-event">新歓について</a></strong></p>'
+
+                // document.writeでHTMLを書き込む
+                document.write(contentHTML);
+            } else {
+                document.write('<span></span>');
+            }
+        </script>
     </div>
 </div>

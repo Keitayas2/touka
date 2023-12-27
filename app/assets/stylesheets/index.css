@@ -1,17 +1,50 @@
-ul{
-    color: black;
-    font-size: 0.8em; 
-
+/* 基本のスタイリング */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央寄せ */
+    padding: 20px; /* 必要に応じて調整 */
 }
 
-.cicle{
-    font-size: 0.3em; 
+.main-picture{
+    border-width: 2px;
+    border-style: outset;
+}
+
+ul {
+    color: black;
+    font-size: 0.9em;
+}
+
+.circle { /* クラス名 "cicle" が "circle" に修正 */
+    font-size: 0.4em;
     color: #777;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-picture img {
+    max-width: 100%; /* 親要素に収まるように */
+    height: auto;
 }
 
+/* メディアクエリ: 画面幅が 768px 以下の場合 */
+@media screen and (max-width: 768px) {
+    .main-container {
+        font-size: 0.75em;
+    }
+
+    .calendar,
+    .X,
+    .map {
+        width: 100%; /* 画面が狭い場合はフル幅に広げる */
+        margin-bottom: 20px; /* 各セクションの下に適切なマージンを追加 */
+    }
+
+    iframe {
+        width: 100%; /* iframe をフル幅に調整 */
+        height: 300px; /* 必要に応じて調整 */
+    }
+
+    .text {
+        text-align: center; /* テキストを中央寄せ */
+    }
+}
