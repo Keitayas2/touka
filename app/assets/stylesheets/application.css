@@ -28,6 +28,10 @@ body {
     margin: 0 auto; /* 横方向に中央寄せ */
 }
 
+h4{
+    padding: 10px 0;
+}
+
 /* ナビゲーションメニューのスタイリング */
 .nav-list {
     list-style: none;
@@ -37,8 +41,12 @@ body {
 li {
     display: flex;
     align-items: center;
-    font-size: 1em; /* 適切なフォントサイズを設定 */
+    font-size: 16px; /* 適切なフォントサイズを設定 */
     margin-bottom: 10px; /* メニューアイテム間のマージンを追加 */
+}
+
+.normal{
+    padding: 5px;
 }
 
 a {
@@ -79,7 +87,7 @@ footer {
 /* メディアクエリ: 画面幅が 768px 以下の場合 */
 @media screen and (max-width: 768px) {
     #header h2 {
-        font-size: 1em; /* 適切なフォントサイズに変更 */
+        font-size: 1.2em; /* 適切なフォントサイズに変更 */
     }
 
     .top, .bottom {

@@ -7,13 +7,18 @@
 }
 
 .main-picture{
-    border-width: 2px;
+    border-width: 5px;
     border-style: outset;
+    border-color: whitesmoke;
 }
 
 ul {
     color: black;
     font-size: 0.9em;
+}
+
+.text{
+    padding: 25px 0px;
 }
 
 .circle { /* クラス名 "cicle" が "circle" に修正 */

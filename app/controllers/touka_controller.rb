@@ -7,5 +7,19 @@ class ToukaController < ApplicationController
 
     end
 
-    
+    def member
+
+    end
+
+    def QA
+
+    end
+
+    def contact
+
+    end
+
+    def kyushu_union
+
+    end
 end

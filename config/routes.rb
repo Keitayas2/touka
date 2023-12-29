@@ -4,4 +4,12 @@ Rails.application.routes.draw do
   root 'touka#index'
   
   get 'touka/about' => 'touka#about'
+  
+  get 'touka/member' => 'touka#member'
+
+  get 'touka/QA' => 'touka#QA'
+
+  get 'touka/contact' => 'touka#contact'
+
+  get 'touka/kyushu_union' => 'touka#kyushu_union'
 end
