@@ -34,7 +34,30 @@ ul {
 /* メディアクエリ: 画面幅が 768px 以下の場合 */
 @media screen and (max-width: 768px) {
     .main-container {
-        font-size: 0.75em;
+        font-size: 1em;
+    }
+
+    .calendar,
+    .X,
+    .map {
+        width: 100%; /* 画面が狭い場合はフル幅に広げる */
+        margin-bottom: 20px; /* 各セクションの下に適切なマージンを追加 */
+    }
+
+    iframe {
+        width: 100%; /* iframe をフル幅に調整 */
+        height: 300px; /* 必要に応じて調整 */
+    }
+
+    .text {
+        text-align: center; /* テキストを中央寄せ */
+    }
+}
+
+/* メディアクエリ: 画面幅が 400px 以下の場合 */
+@media screen and (max-width: 400px) {
+    .main-container {
+        font-size: 0.8em;
     }
 
     .calendar,

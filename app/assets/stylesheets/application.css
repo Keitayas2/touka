@@ -52,6 +52,7 @@ li {
 a {
     color: black;
     text-decoration: none;
+    transition: color 0.1s ease-in-out; /* 色の変化をスムーズに */
 }
 
 /* 追加のスタイリング */
@@ -63,6 +64,7 @@ a {
 /* ホバー時のスタイリング（任意） */
 a:hover {
     color: #3fa310;
+    text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
 footer {
