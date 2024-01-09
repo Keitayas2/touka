@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag 'contact', media: 'all' %>
-  <title>サークル紹介</title>
+  <title>よくあるご質問</title>
+  <!-- jQuery ライブラリを読み込む -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- 期間内にのみ表示するための JavaScript コード -->
+  <script>
+    $(document).ready(function() {
+      var today = new Date();
+      var startDate = new Date('2024-01-07'); // 開始日
+      var endDate = new Date('2024-04-26');   // 終了日
+
+      if (today >= startDate && today <= endDate) {
+        // 期間内の場合、指定の要素を表示
+        $(".limited-content").show();
+      } else {
+        // 期間外の場合、指定の要素を非表示
+        $(".limited-content").hide();
+      }
+    });
+  </script>
+  <!-- スタイルシートを読み込む（必要に応じて修正）-->
+  <%= stylesheet_link_tag 'QA', media: 'all' %>
 </head>
 <body>
 
@@ -15,7 +34,7 @@
 
     <div class="text">
         <p>
-            よくある質問を以下にまとめました！他に何かわからないことがあれば、<%= link_to 'お問い合わせ' , touka_contact_path , class: 'new-event' %>の項目よりご連絡してください。
+            よくある質問を以下にまとめました！他に何か質問があれば、<strong><%= link_to 'お問い合わせ' , touka_contact_path , class: 'new-event' %></strong>の項目よりご連絡お願いします！
         </p>
     </div>
 
@@ -24,7 +43,7 @@
     </div>
     <div class="text">
         <p>
-            様々なポケモン好きの皆さんを大歓迎しています！対戦に詳しくなくても、対戦知識が全くなくても大丈夫です。大切なのは「ポケモンが好き」ということです！
+            様々なポケモン好きの皆さんを大歓迎しています！対戦に詳しくなくても、対戦知識が全くなくても大丈夫です。大切なのは「ポケモンが好き」という気持ちです！
         </p>
     </div>
 
@@ -33,16 +52,18 @@
     </div>
     <div class="text">
         <p>
-            活動はメンバーの提案やアイデアを取り入れつつ企画されています。例えば、ゲーム大会やイベントのアイデアはメンバー全体で話し合い、決定しています。
+            活動はメンバーの提案やアイデアを取り入れつつ企画されています。例えば、ゲーム大会やイベントのアイデアやルールはメンバーで話し合い、決定しています。
+            これにより、メンバー全員が楽しめるような企画を行なっています！
         </p>
     </div>
 
-    <div class="contact-box">
+    <!-- 期間内にのみ表示される要素 -->
+    <div class="limited-content contact-box">
         <h4>Q. 新入生歓迎会のイベント内容について教えてください。</h4>
     </div>
-    <div class="text">
+    <div class="limited-content text">
         <p>
-            新入生歓迎会では、4月12日(金)にはポケモンSVゆびをふる大会、4月19日(金)には使用ポケモン指名大会を行います。詳細は<a href="https://toukanomori.hatenablog.com/about" target='_blank' rel='noreferrer noopener' class="new-event">こちら</a>をご覧ください。
+            新入生歓迎会では、4月12日(金)にポケモンSVゆびをふる大会、4月19日(金)にはタイプ統一杯、4月26日(金)にはマルチバトル大会を行います。詳細は<strong><a href="https://toukanomori.hatenablog.com/about" target='_blank' rel='noreferrer noopener' class="new-event">こちら</a></strong>をご覧ください。
         </p>
     </div>
 
@@ -55,3 +76,5 @@
         </p>
     </div>
 </div>
+</body>
+</html>
